@@ -1,34 +1,24 @@
 #pragma once
-#include "main.h"
-class Doctor
-{
+#include "human.h"
 
+class Doctor : public Human
+{
 private:
-	string name;
-	string surname;
-	int age;
 	int experience;
 	string skill;
 
 public:
-
 	Doctor();
-	Doctor(string n, string sname, int a, int experisnse, string skill);
+	Doctor(string n, string sname, int a, int experience, string skill);
 	Doctor(string n, string sname);
 
 	~Doctor();
 
-	string get_name();
-	void set_name(string n);
-	string get_surname();
-	void set_surname(string n);
-	int get_age();
-	void set_age(int a);
-	float get_experience();
-	void set_experience(float mark);
+	int get_experience();
+	void set_experience(int exp);
 
 	string get_skill();
+	void set_skill(string sk);
+
 	string convert_to_string();
-
 };
-
