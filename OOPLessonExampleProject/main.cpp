@@ -1,7 +1,8 @@
 #include "manager.h"
+#include "doctor.h"
 
 int main() {
-	Student st;
-
+	Human h;
+	
 	return 0;
 }
